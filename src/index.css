@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Premium Cream Palette */
+  --color-cream-light: #FAF9F6;  /* Soft Warm White */
+  --color-cream-base: #F5F3EF;   /* Smooth Cream Sand */
+  --color-cream-dark: #EAE6DF;   /* Muted Clay Border */
+  --color-ink-dark: #181716;     /* Soft Premium Charcoal */
+  --color-ink-muted: #6B6760;    /* Warm Muted Grey */
+
+  /* Product-Inspired Accent Colors (extracted from Pinterest files) */
+  /* Palette 1: Liquid Glass Drops (Yellow-Green-Red) */
+  --color-liquid-green: #10B981;
+  --color-liquid-yellow: #F59E0B;
+  --color-liquid-red: #EF4444;
+
+  /* Palette 2: Magma (Lava orange-red-amber-black) */
+  --color-magma-red: #DC2626;
+  --color-magma-orange: #EA580C;
+  --color-magma-amber: #D97706;
+
+  /* Palette 3: Cyber-Halftone (Deep indigo, teal, hot pink) */
+  --color-cyber-indigo: #312E81;
+  --color-cyber-teal: #0891B2;
+  --color-cyber-pink: #DB2777;
+  
+  /* Gold accents */
+  --color-gold-base: #BCA374;
+  --color-gold-dark: #967E59;
+}
+
+body {
+  background-color: var(--color-cream-light);
+  color: var(--color-ink-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styling utilities */
+.font-serif-elegant {
+  font-family: var(--font-serif);
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cream-dark);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-muted);
+}
